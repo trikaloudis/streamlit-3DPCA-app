@@ -55,7 +55,16 @@ with st.sidebar:
         type=["csv"],
         help="CSV file where rows are samples and columns are attributes. The first column should be the sample ID."
     )
+# Placeholder for the attribute selection dropdown
+    attribute_selector_placeholder = st.empty()
 
+    # Add a divider for visual separation before the logo
+    st.divider()
+
+    # Display the logo and hyperlink at the bottom of the sidebar
+    st.image("Aquomixlab Logo v2 white font.jpg")
+    st.markdown("[www.aquomixlab.com](https://www.aquomixlab.com/)")
+    
     # Placeholder for the attribute selection dropdown
     attribute_selector_placeholder = st.empty()
 
@@ -206,3 +215,4 @@ else:
 # 3. Open your terminal and run the following commands:
 #    pip install -r requirements.txt
 #    streamlit run main.py
+
